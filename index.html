@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAGASÁO</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <header class="header">
+        <div class="logo">
+            <a href="#home">BAGASÁO</a>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="archives.html">ARCHIVES</a>
+            <a href="joinus.html">JOIN US</a>
+            <a href="contactus.html">CONTACT US</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="carousel-container-16-8">
+            <div class="carousel">
+
+        <div class="home-images">
+            <div class="slide active">
+                <img src="home.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="home2.png">
+        </div>
+        
+        <div class="slide">
+            <img src="home3.jpg">
+        </div>
+        
+        <div class="slide">
+            <img src="home4.jpg">
+        </div>
+        
+        <div class="carousel-controls">
+                    <button class="arrow prev" onclick="changeSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="dots">
+                        <span class="dot active" onclick="setSlide(0)"></span>
+                        <span class="dot" onclick="setSlide(1)"></span>
+                        <span class="dot" onclick="setSlide(2)"></span>
+                        <span class="dot" onclick="setSlide(3)"></span>
+                    </div>
+                    <button class="arrow next" onclick="changeSlide(1)"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
